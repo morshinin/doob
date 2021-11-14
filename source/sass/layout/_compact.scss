@@ -1,0 +1,28 @@
+/* _compact.scss */
+.l-compact {
+  background: url('images/doob5.jpg') center center no-repeat;
+  min-height: 531px;
+  padding-top: 129px;
+  &_wrap {
+    @extend %wrap;
+    lost-move: 9/20;
+    border-color: $borderColor;
+    margin-left: 5px;
+    padding-left: 90px;
+    padding-right: 55px;
+    padding-bottom: 14px;
+    width: 567px;
+  }
+  &_title {
+    @extend %title;
+    font-size: $fourthTitleFontSize;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  &_text {
+    font-family: $thinFont;
+    font-size: $textHighlightedFontSize - 10;
+    color: $primaryFontColor;
+    line-height: 36.82px;
+  }
+}

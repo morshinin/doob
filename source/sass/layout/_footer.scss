@@ -1,1 +1,41 @@
 // _footer.scss
+.l-footer {
+  background: url('images/doob13.jpg') center center no-repeat;
+  min-height: 175px;
+  padding-top: 55px;
+  &_logo {
+    lost-column: 3/20;
+    lost-offset: 2/20;
+    padding-left: 53px;
+  }
+  &_nav {
+    lost-column: 10/20;
+    /* lost-move: 2/20; */
+    padding-left: 33px;
+    padding-top: 16px;
+  }
+  &_menu {
+    @include listUnstyled;
+  }
+  &_item {
+    display: inline-block;
+    margin: 0 18px;
+  }
+  &_link {
+    color: $primaryFontColor;
+    font-size: $footerNavFontSize;
+    text-decoration: none;
+    padding-bottom: 10px;
+    &:hover {
+      border-bottom: 1px solid $activeLinkColor;
+      color: $activeLinkColor;
+    }
+  }
+  &_phone {
+    lost-column: 5/20;
+    color: $primaryFontColor;
+    font-family: $thinFont;
+    font-size: $textBigFontSize;
+    padding-top: 13px;
+  }
+}

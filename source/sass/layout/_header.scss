@@ -1,1 +1,68 @@
 // _header.scss
+.l-header {
+  min-height: 927px;
+  background: url('images/doob.jpg') center center no-repeat;
+  padding-top: 14px;
+  &_logo {
+    lost-column: 3/20;
+    lost-move: 1/20;
+  }
+  &_nav {
+    lost-column: 13/20;
+    lost-move: 4/20;
+    margin-bottom: 63px;
+    padding: 20px 0;
+  }
+  &_list {
+    @include listUnstyled;
+  }
+  &_item {
+    display: inline-block;
+    margin: 0 37px 0 8px;
+    letter-spacing: 0.4px;
+  }
+  &_link {
+    color: $primaryFontColor;
+    text-decoration: none;
+    padding-bottom: 6px;
+    &:hover {
+      border-bottom: 1px solid $activeLinkColor;
+      color: $activeLinkColor;
+    }
+  }
+  &_hero {
+    lost-column: 16/20;
+    lost-move: 2/20;
+    lost-offset: 2/20;
+  }
+  &_title {
+    @extend %title;
+    margin-bottom: 20px;
+  }
+  hr {
+    width: 108px;
+  }
+  &_subtitle {
+    color: $primaryFontColor;
+    font-family: $boldFont;
+    text-transform: uppercase;
+    font-size: $textDescriptionFontSize;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 42px;
+    line-height: 28px;
+  }
+  &_btnWrap {
+    text-align: center;
+  }
+  &_btn {
+    text-transform: uppercase;
+    background: #D6C4BA;
+    /* background: #F2B670; */
+    color: $darkFontColor;
+    text-decoration: none;
+    padding: 22px 62px;
+    border-radius: 30px;
+    font-size: $textBigFontSize;
+  }
+}

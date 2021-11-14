@@ -1,0 +1,82 @@
+/* _cart.scss */
+
+.l-cart {
+  width: 900px;
+  height: 675px;
+  padding-top: 50px;
+  display: none;
+  &_title {
+    text-align: center;
+    font-family: $thinFont;
+    font-size: 37.1px;
+    margin-bottom: 38px;
+  }
+  &_table {
+    margin-left: 50px;
+  }
+  &_th {
+    color: $fadedTextColor;
+    text-align: left;
+    font-size: 17px;
+    padding-bottom: 30px;
+    &--select {
+      text-align: center;
+    }
+  }
+  &_td {
+    padding-bottom: 20px;
+    &--title {
+      font-size: 20px;
+      color: $darkFontColor;
+      width: 300px;
+      padding-left: 24px;
+      span {
+        display: block;
+      }
+    }
+    &--price {
+      width: 50px;
+    }
+    &--select {
+      width: 250px;
+      text-align: center;
+      color: $fadedTextColor;
+      position: relative;
+      input[type="text"] {
+        width: 70px;
+        height: 40px;
+        padding: 5px 0 0 25px;
+        position: relative;
+        margin-left: 5px;
+        color: $darkFontColor;
+      }
+    }
+    &--sum {
+      font-size: $textBigFontSize;
+    }
+  }
+  &_numberControl {
+    position: absolute;
+    &:nth-of-type(1) {
+      right: 90px;
+      top: 35px;
+    }
+    &:nth-of-type(2) {
+      right: 91px;
+      top: 45px;
+    }
+  }
+  &_final {
+    font-size: $textBigFontSize;
+    text-align: center;
+    span {
+      font-family: $boldFont;
+    }
+  }
+  .l-cart_btn {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 20.27px;
+    text-align: center;
+  }
+}

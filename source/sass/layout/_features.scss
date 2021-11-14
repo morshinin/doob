@@ -1,0 +1,37 @@
+/* _features.scss */
+.l-features {
+  background: url('images/doob22.jpg') center 0 no-repeat;
+  min-height: 679px;
+  color: $primaryFontColor;
+  padding-top: 63px;
+  &_title {
+    @extend %title;
+    line-height: 45.47px;
+    font-size: $secondaryTitleFontSize;
+    margin-bottom: 149px;
+  }
+  &_subsection {
+    &:nth-of-type(1) {
+      text-align: right;
+      lost-column: 5/20;
+    }
+    &:nth-of-type(2) {
+      lost-column: 5/20;
+      lost-move: 10/20;
+    }
+  }
+  &_item {
+    &:nth-of-type(odd) {
+      margin-bottom: 123px;
+    }
+  }
+  &_subtitle {
+    font-family: $boldFont;
+    font-size: $subtitleFontSize;
+    margin-bottom: 5px;
+  }
+  &_text {
+    font-family: $lightFont;
+  }
+
+}

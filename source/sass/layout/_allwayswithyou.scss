@@ -1,0 +1,20 @@
+/* _allwayswithyou.scss */
+.l-allwayswithyou {
+  min-height: 531px;
+  background: url('images/doob44.jpg') center center no-repeat;
+  padding-top: 141px;
+  &_wrap {
+    @extend %wrap;
+    border-left: none;
+  }
+  &_title {
+    @extend %title;
+    color: $darkFontColor;
+    font-size: $fourthTitleFontSize;
+    margin-bottom: 10px;
+  }
+  &_text {
+    font-family: $thinFont;
+    font-size: $textHighlightedFontSize - 10;
+  }
+}

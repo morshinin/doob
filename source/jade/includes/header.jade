@@ -1,2 +1,23 @@
 //- header.jade
 header.l-header
+  .l-container
+    .l-header_logo
+      img(src="images/logo.png", alt="")
+    nav.l-header_nav
+      ul.l-header_list
+        li.l-header_item 
+          a.l-header_link(href="#features") Что это?
+        li.l-header_item 
+          a.l-header_link(href="#howitworks") Как работает?
+        li.l-header_item 
+          a.l-header_link(href="#fabric") Материалы
+        li.l-header_item 
+          a.l-header_link(href="#") Магазин
+        li.l-header_item 
+          a.l-header_link(href="#cart" rel="modal:open") Корзина
+    .l-header_hero
+      h1.l-header_title Маленький кошелек с&nbsp;большим&nbsp;потенциалом
+      hr
+      h2.l-header_subtitle Минимализм. Вместительность. Удобство.
+      .l-header_btnWrap
+        a.l-header_btn(href="#calc" rel="modal:open") Хочу такой

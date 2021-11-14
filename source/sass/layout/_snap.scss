@@ -1,0 +1,24 @@
+/* _snap.scss */
+.l-snap {
+  background: url('images/doob66.jpg') center center no-repeat;
+  min-height: 531px;
+  padding-top: 129px;
+  &_wrap {
+    @extend %wrap;
+    border-left: none;
+    padding-right: 90px;
+    width: 545px;
+    height: 283px;
+  }
+  &_title {
+    @extend %title;
+    color: $darkFontColor;
+    font-size: $fourthTitleFontSize;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  &_text {
+    font-family: $thinFont;
+    font-size: $textHighlightedFontSize - 10;
+  }
+}

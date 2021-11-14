@@ -1,0 +1,109 @@
+/* _main.scss */
+.l-simple {
+  background: url('images/doob9.jpg') center center no-repeat;
+  min-height: 736px;
+  padding-top: 48px;
+  &_title {
+    @extend %title;
+    color: $darkFontColor;
+    font-size: $thirdTitleFontSize;
+  }
+}
+.l-fabric {
+  background: url('images/doob10.jpg') center center no-repeat;
+  min-height: 708px;
+  padding-top: 77px;
+  &_quality {
+    margin-bottom: 28px;
+    &:nth-of-type(1) {
+      lost-column: 8/20;
+    }
+    &:nth-of-type(2) {
+      lost-column: 7/20;
+      lost-move: 1/20;
+      lost-offset: 5/20;
+      margin-top: -5px;
+    }
+  }
+  &_icon {
+    margin-bottom: 23px;
+  }
+  hr {
+    width: 214px;
+    display: inline-block;
+    margin-bottom: 34px;
+  }
+  &_text {
+    font-family: $thinFont;
+    font-size: $textBigFontSize - 4;
+    color: $primaryFontColor;
+    line-height: 33px;
+    letter-spacing: 1px;
+  }
+  &_quality--title {
+    lost-column: 17/20;
+  }
+  &_title {
+    @extend %title;
+    text-align: left;
+    font-size: 51.74px;
+    letter-spacing: -0.5px;
+    line-height: 50px;
+  }
+}
+.l-benefits {
+  background: url('images/doob11.jpg') center center no-repeat;
+  min-height: 664px;
+  padding-top: 60px;
+  &_section {
+    font-family: $baseFont;
+    font-size: $textBigFontSize;
+    color: $primaryFontColor;
+    line-height: 33.37px;
+    &:nth-of-type(1) {
+      lost-column: 9/20;
+    }
+    &:nth-of-type(2) {
+      lost-column: 10/20;
+    }
+  }
+}
+.l-cta {
+  background: url('images/doob12.jpg') center 157px no-repeat;
+  min-height: 812px;
+  text-align: center;
+  padding-top: 74px;
+  &_title {
+    @extend %title;
+    color: $darkFontColor;
+    margin-bottom: 544px;
+    letter-spacing: -0.8px;
+  }
+  &_lines {
+    padding-top: 27px;
+    lost-column: 6/20;
+    &:nth-of-type(1) {
+      lost-offset: 1/20;
+    }
+    hr {
+      margin: 5px 0;
+      color: #d6d6d6;
+      height: 2px;
+      border-left: none;
+    }
+  }
+  &_btnWrap {
+    lost-column: 6/20;
+    lost-offset: 1/20;
+  }
+  &_btn {
+    font-family: $boldFont;
+    font-size: $btnSecondaryFontSize;
+    text-transform: uppercase;
+    color: $darkFontColor;
+    text-decoration: none;
+    background: $btnSecondaryBgColor;
+    padding: 20px 30px;
+    display: block;
+  }
+}

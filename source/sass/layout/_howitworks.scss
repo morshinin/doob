@@ -1,0 +1,11 @@
+/* _howitworks.scss */
+.l-howitworks {
+  background: url('images/doob3.jpg') center center no-repeat;
+  min-height: 752px;
+  padding-top: 43px;
+  &_title {
+    @extend %title;
+    font-size: $thirdTitleFontSize;
+    line-height: 48px;
+  }
+}

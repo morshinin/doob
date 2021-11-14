@@ -9,9 +9,21 @@
 //     min-width: 760px;
 //   }
 // }
+
+.l-container {
+  lost-center: $container;
+  &--features {
+    lost-center: $container + 100;
+  }
+}
+.l-row {
+  lost-row: 1/1;
+}
+
 body {
   font-family: $baseFont;
-  // lost-utility: edit;
+  min-width: $container + 100;
+  /* lost-utility: edit; */
 }
 p {
   margin: 0;
@@ -24,13 +36,35 @@ h4,
 h5,
 h6 {
   // font-family: $gnuolane;
-  // margin: 0;
+margin: 0;
+}
+
+%title {
+  font-family: $heavyFont;
+  font-size: $primaryTitleFontSize;
+  color: $primaryFontColor;
+  line-height: 53px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%wrap {
+  border: 10px solid $primaryFontColor;
+  display: inline-block;
+  padding: 43px 110px 19px 3px;
 }
 
 ul {
   padding: 0;
   margin: 0;
 }
+
+hr {
+  height: 2px;
+  background: $primaryFontColor;
+  margin-bottom: 21px;
+}
+
 .align-right {
   float: right;
 }

@@ -1,2 +1,16 @@
 //- footer.jade
 footer.l-footer
+  .l-container
+    .l-footer_logo
+      img(src="images/logo.png", alt="")
+    nav.l-footer_nav
+      ul.l-footer_menu
+        li.l-footer_item
+          a.l-footer_link(href="#shipping", rel="modal:open") Доставка и оплата
+        li.l-footer_item
+          a.l-footer_link(href="#") Гарантия
+        li.l-footer_item
+          a.l-footer_link(href="#") Контакты
+    p.l-footer_phone +7 (987) 654-32-10
+script(src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=", crossorigin="anonymous")
+script(src="js/jquery.modal.min.js")

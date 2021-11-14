@@ -1,0 +1,37 @@
+.l-calc#calc
+  h3.l-calc_title Выбери себе кошелек:
+  .l-row
+    .l-calc_color
+      h4.l-calc_subtitle Выберите цвет
+      ul
+        li
+          a(href="#")
+        li
+          a(href="#")
+        li
+          a(href="#")
+    .l-calc_customization
+      h4.l-calc_subtitle Индивидуальная гравировка:
+        span +190р.
+      input.l-calc_ckeckinput(type="checkbox", value="None", id="check", name="check")
+      label.l-calc_checklabel(for="check") Да
+        span  
+      label(for="custom_input") Введите текст:
+      input(type="text", id="custom_input")
+  .l-row
+    .l-calc_colorImg
+    .l-calc_customizationImg
+  .l-row
+    .l-calc_quantity
+      label(for="calc_quantity") Выберите
+        br
+        | количество:
+      input#calc_quantity(type="text")
+      a.l-calc_numberControl(href="#")
+        img(src="images/uparrow.png", alt="")
+      a.l-calc_numberControl(href="#")
+        img(src="images/downarrow.png", alt="")
+    .l-calc_finalPrice
+      p Итоговая цена: 2180р.
+        span (без учета доставки)
+    a.m-btn.l-calc_btn(href="#") Купить

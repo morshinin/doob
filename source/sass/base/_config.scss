@@ -1,37 +1,41 @@
 // _config.scss
 
 // Grid settings
-$container: 1170px;
+$container: 1000px;
+@lost gutter 0;
 
 // Typography
-$baseFontSize: 1em;
+$baseFontSize: 16px;
+$primaryTitleFontSize: 52.87px;
+$secondaryTitleFontSize: 52.52px;
+$thirdTitleFontSize: 48.35px;
+$fourthTitleFontSize: 48.01px;
+$subtitleFontSize: 29.94px;
+$textHighlightedFontSize: 31.01px;
+$btnSecondaryFontSize: 28.26px;
+$textBigFontSize: 24px;
+$textDescriptionFontSize: 18.79px;
+$btnFontSize: 18px;
+$footerNavFontSize: 17.75px;
 $baseLine: $baseFontSize * 1.75;
 
 // Font families
-$baseFont: sans-serif;
-// $lightFont: "OpenSansLight", sans-serif;
-// $italicFont: "OpenSansLightItalic", sans-serif;
-// $boldFont: "OpenSansBold", sans-serif;
-// $semiBoldFont: "OpenSansSemiBold", sans-serif;
-// $primaryTitle: "ArsenalRegular", serif;
-// $secondaryTitle: "Nautilus", serif;
+$baseFont: "SFUIDisplay-Regular", sans-serif;
+$lightFont: "SFUIDisplay-Light", sans-serif;
+$thinFont: "SFUIDisplay-Thin", sans-serif;
+$boldFont: "SFUIDisplay-Bold", sans-serif;
+$heavyFont: "SFUIDisplay-Heavy", sans-serif;
+$secondaryTitle: "NexaScript-Thin", sans-serif;
 
 // Colors
-// $lightBg: #F6F5F2;
-// $darkBg: #FAFAFA;
-// $border: #e6e7e8;
-// $lightBgText: #a7a7a7;
-// $lightBgLink: #767676;
-// $lightHeadings: #474747;
-// $darkHeadings: #222222;
-//
-// $textOnPrimary: #FFFFFD;
-// $primaryFaded: #65c6ef;
-//
-// $primaryColor: #03A9F4;
-//
-// $secondaryDark: #2e5a6c;
-// $secondaryColor: #1789b9;
-// $secondaryFaded: #1f9cd2;
-//
+$primaryFontColor: #fff;
+$secondaryFontColor: #c2c2c2;
+$darkFontColor: #000;
+$activeLinkColor: #de302f;
+$lightBgColor: #F6F5F2;
+$btnPrimaryBgColor: #d0f9f9;
+$btnSecondaryBgColor: #ffec46;
+$borderColor: #273a5b;
+$fadedTextColor: #8e8e8e;
+
 // $errorColor: #ef3556;

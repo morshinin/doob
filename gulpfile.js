@@ -20,8 +20,8 @@ gulp.task('css', function() {
   var processors = [
     // magician({hosted:'../fonts'}),
     lost,
-    autoprefixer
-    // pxtorem({propWhiteList:[]})
+    autoprefixer,
+    pxtorem({propWhiteList:[]})
     // cssnano
   ];
   return gulp.src('./source/sass/**/*.scss')

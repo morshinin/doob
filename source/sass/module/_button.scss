@@ -1,1 +1,11 @@
 // _button.scss
+.m-btn {
+  font-family: $boldFont;
+  font-size: $btnSecondaryFontSize;
+  text-transform: uppercase;
+  color: $darkFontColor;
+  text-decoration: none;
+  background: $btnSecondaryBgColor;
+  padding: 20px 30px;
+  display: block;
+}

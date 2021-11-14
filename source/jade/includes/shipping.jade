@@ -1,0 +1,35 @@
+//- shipping.jade
+.l-shipping#shipping
+  h3.l-shipping_title Доставка и оплата
+  .l-row
+    .l-shipping_section
+      form.l-shipping_form
+        div
+          label(for="shipping_name") Ваше ФИО:
+          label(for="shipping_phone") Телефон:
+          label(for="shipping_address") Адрес:
+          label(for="shipping_email") E-mail:
+        div        
+          input#shipping_name(type="text")
+          input#shipping_phone(type="text")
+          input#shipping_address(type="text")
+          input#shipping_email(type="text")
+    .l-shipping_section
+      p Способ доставки:
+      input#shipping_method(type="radio")
+      label.l-shipping_methodLabel(for="shipping_method") Почта России 1-й класс -
+        span 249р.
+        span.l-shipping_radio
+      p Способ оплаты:
+      input#shipping_payment(type="radio")
+      label.l-shipping_methodLabel(for="shipping_payment") Наложенным платежом (Оплата
+        br
+        | производится при получении заказа
+        br
+        | на Почте)
+        span.l-shipping_radio
+  .l-row
+    p.l-shipping_finalPrice Итоговая цена: 2180р.
+      span (с доставкой)
+    .l-shipping_btnWrap
+      a.m-btn.l-shipping_btn(href="#") Подтвердить заказ

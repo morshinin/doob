@@ -1,0 +1,40 @@
+.l-cart#cart
+  .l-container--cart
+    h3.l-cart_title Корзина
+    table.l-cart_table
+      tr.l-cart_header
+        th.l-cart_th(colspan="2") Товар
+        th.l-cart_th Цена
+        th.l-cart_th.l-cart_th--select Кол-во
+        th.l-cart_th Итог
+      tr
+        td.l-cart_td
+          img.l-cart_img(src="images/cartimg.jpg", alt="")
+        td.l-cart_td.l-cart_td--title#item_title Мини-кошелек Doob
+          span (красный)
+        td.l-cart_td.l-cart_td--price#price 800р.
+        td.l-cart_td.l-cart_td--select
+          | X
+          input(type="text")
+          a.l-cart_numberControl(href="#")
+            img(src="images/uparrow.png", alt="")
+          a.l-cart_numberControl(href="#")
+            img(src="images/downarrow.png", alt="")
+        td.l-cart_td.l-cart_td--sum#sum 1600р.
+      tr
+        td.l-cart_td
+          img.l-cart_img(src="images/cartimg.jpg", alt="")
+        td.l-cart_td.l-cart_td--title#item_title Мини-кошелек Doob
+          span (красный)
+        td.l-cart_td.l-cart_td--price#price 800р.
+        td.l-cart_td.l-cart_td--select
+          | X
+          input(type="text")
+          a.l-cart_numberControl(href="#")
+            img(src="images/uparrow.png", alt="")
+          a.l-cart_numberControl(href="#")
+            img(src="images/downarrow.png", alt="")
+        td.l-cart_td.l-cart_td--sum#sum 1600р.
+    p.l-cart_final Итоговая цена:
+      span 2180 руб.
+    a.m-btn.l-cart_btn Оформить заказ

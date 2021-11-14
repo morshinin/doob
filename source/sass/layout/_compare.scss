@@ -1,0 +1,12 @@
+/* _compare.scss */
+.l-compare {
+  background: url('images/doob8.jpg') center 180px no-repeat;
+  min-height: 488px;
+  padding-top: 63px;
+  &_text {
+    text-align: center;
+    font-family: $thinFont;
+    font-size: $textBigFontSize;
+    line-height: 32px;
+  }
+}

@@ -1,0 +1,137 @@
+/* _calc.scss */
+.l-calc {
+  lost-center: 900px;
+  padding-top: 41px;
+  display: none;
+  &_title {
+    text-align: center;
+    font-family: $thinFont;
+    font-size: 37.1px;
+    margin-bottom: 54px;
+  }
+  &_color {
+    lost-column: 8/18;
+    padding-left: 50px;
+    ul {
+      @include listUnstyled;
+    }
+    li {
+      display: inline-block;
+      width: 37px;
+      height: 37px;
+      border-radius: 2px;
+      margin-right: 13px;
+      &:nth-of-type(1) {
+        background: #ac3032;
+      }
+      &:nth-of-type(2) {
+        background: #4476cd;
+      }
+      &:nth-of-type(3) {
+        background: #fec077;
+      }
+      a {
+        display: block;
+        height: 37px;
+      }
+    }
+  }
+  &_subtitle {
+    margin-bottom: 16px;
+    font-size: $textBigFontSize;
+  }
+  &_customization {
+    lost-column: 10/18;
+    .l-calc_subtitle {
+      margin-bottom: 10px;
+      position: relative;
+      span {
+        color: #4ea846;
+        font-size: 17px;
+        position: absolute;
+      }
+    }
+    label {
+      font-size: 18px;
+    }
+    input[type="checkbox"] {
+      display: none;
+      &:checked + label span {
+        background: $darkFontColor;
+        background-clip: content-box;
+
+      }
+    }
+    input[type="text"] {
+      width: 220px;
+      height: 35px;
+      border: 1px solid $fadedTextColor;
+      border-radius: 3px;
+    }
+  }
+  &_colorImg {
+    lost-column: 8/18;
+    height: 200px;
+    margin-bottom: 60px;
+  }
+  &_customizationImg {
+    lost-column: 10/18;
+    height: 200px;
+  }
+  &_checklabel {
+    span {
+      display: inline-block;
+      position: relative;
+      top: 10px;
+      margin-left: 5px;
+      padding: 5px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $fadedTextColor;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+  &_quantity {
+    lost-column: 8/18;
+    padding-left: 50px;
+    position: relative;
+    label {
+      font-size: $textBigFontSize;
+    }
+    input[type="text"] {
+      width: 70px;
+      height: 40px;
+      padding: 5px 0 0 25px;
+      position: relative;
+      margin-left: 10px;
+      top: -15px;
+    }
+  }
+  &_numberControl {
+    position: absolute;
+    &:nth-of-type(1) {
+      right: 114px;
+      top: 18px;
+    }
+    &:nth-of-type(2) {
+      right: 115px;
+      top: 28px;
+    }
+  }
+  &_finalPrice {
+    lost-column: 5/18;
+    p {
+      font-size: $textBigFontSize;
+      span {
+        font-size: 17px;
+        color: #b1b1b1;
+        display: block;
+      }
+    }
+  }
+  &_btn {
+    lost-column: 4/18;
+    text-align: center;
+  }
+}

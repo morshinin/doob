@@ -1,11 +1,250 @@
 <!DOCTYPE html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <title>Nikesportwatch</title>
+  <title>Doob</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="jquery.modal.css">
   <meta name="viewport" content="initial-scale=1.0">
 </head>
 <body>
-  <header class="l-header"></header>
-  <footer class="l-footer"></footer>
+  <header class="l-header">
+    <div class="l-container">
+      <div class="l-header_logo"><img src="images/logo.png" alt=""></div>
+      <nav class="l-header_nav">
+        <ul class="l-header_list">
+          <li class="l-header_item"> <a href="#features" class="l-header_link">Что это?</a></li>
+          <li class="l-header_item"> <a href="#howitworks" class="l-header_link">Как работает?</a></li>
+          <li class="l-header_item"> <a href="#fabric" class="l-header_link">Материалы</a></li>
+          <li class="l-header_item"> <a href="#" class="l-header_link">Магазин</a></li>
+          <li class="l-header_item"> <a href="#cart" rel="modal:open" class="l-header_link">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="l-header_hero">
+        <h1 class="l-header_title">Маленький кошелек с&nbsp;большим&nbsp;потенциалом</h1>
+        <hr>
+        <h2 class="l-header_subtitle">Минимализм. Вместительность. Удобство.</h2>
+        <div class="l-header_btnWrap"><a href="#calc" rel="modal:open" class="l-header_btn">Хочу такой</a></div>
+      </div>
+    </div>
+  </header>
+  <section id="features" class="l-features">
+    <div class="l-container--features">
+      <h3 class="l-features_title">Что в нем такого?</h3>
+      <div class="l-features_subsection">
+        <div class="l-features_item">
+          <h4 class="l-features_subtitle">Удобный</h4>
+          <p class="l-features_text">Незаметен в кармане.<br>Легко достать.</p>
+        </div>
+        <div class="l-features_item">
+          <h4 class="l-features_subtitle">Вместительный</h4>
+          <p class="l-features_text">Вмещает до 40 купюр<br>и 6 кредитных карт.</p>
+        </div>
+      </div>
+      <div class="l-features_subsection">
+        <div class="l-features_item">
+          <h4 class="l-features_subtitle">Стильный</h4>
+          <p class="l-features_text">Приятный цвет, натуральная<br>кожа. Ничего лишнего.</p>
+        </div>
+        <div class="l-features_item">
+          <h4 class="l-features_subtitle">Сделан вручную</h4>
+          <p class="l-features_text">Делаем сами, с душой,<br>в России.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="howitworks" class="l-howitworks">
+    <div class="l-container">
+      <h3 class="l-howitworks_title">Как это<br>работает?</h3>
+    </div>
+  </section>
+  <section class="l-allwayswithyou">
+    <div class="l-container">
+      <div class="l-allwayswithyou_wrap">
+        <h3 class="l-allwayswithyou_title">Всегда с собой</h3>
+        <p class="l-allwayswithyou_text">Дизайн мини-кошелька<br>продуман и прост.</p>
+      </div>
+    </div>
+  </section>
+  <section class="l-compact">
+    <div class="l-container">
+      <div class="l-compact_wrap">
+        <h3 class="l-compact_title">Компактно</h3>
+        <p class="l-compact_text">Бумажные купюры фиксируются<br>компактным отделением для<br>пластиковых карт</p>
+      </div>
+    </div>
+  </section>
+  <section class="l-snap">
+    <div class="l-container">
+      <div class="l-snap_wrap">
+        <h3 class="l-snap_title">Застежка</h3>
+        <p class="l-snap_text">Аксессуар надежно закрывается<br>на кнопку, не позволяя содер-<br>жимому выпасть.</p>
+      </div>
+    </div>
+  </section>
+  <section class="l-fit">
+    <div class="l-container">
+      <h3 class="l-fit_title">Поместится<br>в любой карман!</h3>
+    </div>
+  </section>
+  <div class="l-compare">
+    <div class="l-container">
+      <p class="l-compare_text">Теперь можно оставить дома неудобную сумку &mdash; кошелек отлично сочетается<br>как с деловым костюмом, так и с любым другим стилем одежды</p>
+    </div>
+  </div>
+  <section class="l-simple">
+    <div class="l-container">
+      <h3 class="l-simple_title">Легче легкого!</h3>
+    </div>
+  </section>
+  <section id="fabric" class="l-fabric">
+    <div class="l-container">
+      <div class="l-fabric_quality"><img src="images/doob_icon.png" alt="" class="l-fabric_icon">
+        <p class="l-fabric_text">Каждый кошелек DOOB создается вручную, в единственном экземпляре и только из натуральной итальянской кожи высшего качества.</p>
+      </div>
+      <div class="l-fabric_quality"><img src="images/doob_icon2.png" alt="" class="l-fabric_icon">
+        <p class="l-fabric_text">Выпускаются лимитированными сериями, с уникальными сочетаниями фактуры и цвета кожи.</p>
+      </div>
+      <div class="l-fabric_quality--title">
+        <hr>
+        <h3 class="l-fabric_title">Мы используем лучшие материалы - особопрочные нити tytan и немецкую фурнитуру.</h3>
+      </div>
+    </div>
+  </section>
+  <div class="l-benefits">
+    <div class="l-container">
+      <div class="l-benefits_section">
+        <p class="l-benefits_text">Каждый кошелек комплектуется фирменным пеналом с гравировкой. Это будет идеальный подарок. Особенно для себя.</p>
+      </div>
+      <div class="l-benefits_section">
+        <p class="l-benefits_text">Так же мы можем сделать гравировку с посланием будущему владельцу кошелька, что еще сильнее увеличит впечатления от подарка.</p>
+      </div>
+    </div>
+  </div>
+  <section class="l-cta">
+    <div class="l-container">
+      <h3 class="l-cta_title">Кошельки готовы. А вы?</h3>
+      <div class="l-cta_lines">
+        <hr>
+        <hr>
+      </div>
+      <div class="l-cta_btnWrap"><a href="#" class="l-cta_btn">Купить</a></div>
+      <div class="l-cta_lines">
+        <hr>
+        <hr>
+      </div>
+    </div>
+  </section>
+  <footer class="l-footer">
+    <div class="l-container">
+      <div class="l-footer_logo"><img src="images/logo.png" alt=""></div>
+      <nav class="l-footer_nav">
+        <ul class="l-footer_menu">
+          <li class="l-footer_item"><a href="#shipping" rel="modal:open" class="l-footer_link">Доставка и оплата</a></li>
+          <li class="l-footer_item"><a href="#" class="l-footer_link">Гарантия</a></li>
+          <li class="l-footer_item"><a href="#" class="l-footer_link">Контакты</a></li>
+        </ul>
+      </nav>
+      <p class="l-footer_phone">+7 (987) 654-32-10</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+  <script src="js/jquery.modal.min.js"></script>
+  <div id="cart" class="l-cart">
+    <div class="l-container--cart">
+      <h3 class="l-cart_title">Корзина</h3>
+      <table class="l-cart_table">
+        <tr class="l-cart_header">
+          <th colspan="2" class="l-cart_th">Товар</th>
+          <th class="l-cart_th">Цена</th>
+          <th class="l-cart_th l-cart_th--select">Кол-во</th>
+          <th class="l-cart_th">Итог</th>
+        </tr>
+        <tr>
+          <td class="l-cart_td"><img src="images/cartimg.jpg" alt="" class="l-cart_img"></td>
+          <td id="item_title" class="l-cart_td l-cart_td--title">Мини-кошелек Doob<span>(красный)</span></td>
+          <td id="price" class="l-cart_td l-cart_td--price">800р.</td>
+          <td class="l-cart_td l-cart_td--select">X
+            <input type="text"><a href="#" class="l-cart_numberControl"><img src="images/uparrow.png" alt=""></a><a href="#" class="l-cart_numberControl"><img src="images/downarrow.png" alt=""></a>
+          </td>
+          <td id="sum" class="l-cart_td l-cart_td--sum">1600р.</td>
+        </tr>
+        <tr>
+          <td class="l-cart_td"><img src="images/cartimg.jpg" alt="" class="l-cart_img"></td>
+          <td id="item_title" class="l-cart_td l-cart_td--title">Мини-кошелек Doob<span>(красный)</span></td>
+          <td id="price" class="l-cart_td l-cart_td--price">800р.</td>
+          <td class="l-cart_td l-cart_td--select">X
+            <input type="text"><a href="#" class="l-cart_numberControl"><img src="images/uparrow.png" alt=""></a><a href="#" class="l-cart_numberControl"><img src="images/downarrow.png" alt=""></a>
+          </td>
+          <td id="sum" class="l-cart_td l-cart_td--sum">1600р.</td>
+        </tr>
+      </table>
+      <p class="l-cart_final">Итоговая цена:<span>2180 руб.</span></p><a class="m-btn l-cart_btn">Оформить заказ</a>
+    </div>
+  </div>
+  <div id="calc" class="l-calc">
+    <h3 class="l-calc_title">Выбери себе кошелек:</h3>
+    <div class="l-row">
+      <div class="l-calc_color">
+        <h4 class="l-calc_subtitle">Выберите цвет</h4>
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+      <div class="l-calc_customization">
+        <h4 class="l-calc_subtitle">Индивидуальная гравировка:<span>+190р.</span></h4>
+        <input type="checkbox" value="None" id="check" name="check" class="l-calc_ckeckinput">
+        <label for="check" class="l-calc_checklabel">Да<span> </span></label>
+        <label for="custom_input">Введите текст:</label>
+        <input type="text" id="custom_input">
+      </div>
+    </div>
+    <div class="l-row">
+      <div class="l-calc_colorImg"></div>
+      <div class="l-calc_customizationImg"></div>
+    </div>
+    <div class="l-row">
+      <div class="l-calc_quantity">
+        <label for="calc_quantity">Выберите<br>количество:</label>
+        <input id="calc_quantity" type="text"><a href="#" class="l-calc_numberControl"><img src="images/uparrow.png" alt=""></a><a href="#" class="l-calc_numberControl"><img src="images/downarrow.png" alt=""></a>
+      </div>
+      <div class="l-calc_finalPrice">
+        <p>Итоговая цена: 2180р.<span>(без учета доставки)</span></p>
+      </div><a href="#" class="m-btn l-calc_btn">Купить</a>
+    </div>
+  </div>
+  <div id="shipping" class="l-shipping">
+    <h3 class="l-shipping_title">Доставка и оплата</h3>
+    <div class="l-row">
+      <div class="l-shipping_section">
+        <form class="l-shipping_form">
+          <div>
+            <label for="shipping_name">Ваше ФИО:</label>
+            <label for="shipping_phone">Телефон:</label>
+            <label for="shipping_address">Адрес:</label>
+            <label for="shipping_email">E-mail:</label>
+          </div>
+          <div>       
+            <input id="shipping_name" type="text">
+            <input id="shipping_phone" type="text">
+            <input id="shipping_address" type="text">
+            <input id="shipping_email" type="text">
+          </div>
+        </form>
+      </div>
+      <div class="l-shipping_section">
+        <p>Способ доставки:</p>
+        <input id="shipping_method" type="radio">
+        <label for="shipping_method" class="l-shipping_methodLabel">Почта России 1-й класс -<span>249р.</span><span class="l-shipping_radio"></span></label>
+        <p>Способ оплаты:</p>
+        <input id="shipping_payment" type="radio">
+        <label for="shipping_payment" class="l-shipping_methodLabel">Наложенным платежом (Оплата<br>производится при получении заказа<br>на Почте)<span class="l-shipping_radio"></span></label>
+      </div>
+    </div>
+    <div class="l-row">
+      <p class="l-shipping_finalPrice">Итоговая цена: 2180р.<span>(с доставкой)</span></p>
+      <div class="l-shipping_btnWrap"><a href="#" class="m-btn l-shipping_btn">Подтвердить заказ</a></div>
+    </div>
+  </div>
 </body>
